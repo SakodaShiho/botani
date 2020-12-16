@@ -1,0 +1,77 @@
+* {
+    font-family: "Montserrat", Arial, sans-serif;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-top {
+    padding-top: 30px;
+}
+
+/* logo */
+
+.logo {
+    padding-left: 50px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+/* search */
+
+.search {
+    float: right;
+}
+
+input[name="search"] {
+    margin-right: 30px;
+}
+
+/* menu */
+
+.menu {
+    padding: 30px 0px 15px 53px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    font-size: 13px;
+    padding-right: 40px;
+}
+
+/* sale */
+
+.sale {
+    background-color: #88C8BC;
+    width: 100%;
+    padding: 13px 0px;
+}
+
+.sale p {
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* main */
+
+.main {
+    height: 200px;
+}
+
+.main img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
