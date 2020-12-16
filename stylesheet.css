@@ -67,11 +67,11 @@ input[name="search"] {
 /* main */
 
 .main {
-    height: 200px;
+    height: 600px;
+    overflow: hidden;
 }
 
 .main img {
     width: 100%;
-    height: auto;
     object-fit: contain;
 }
