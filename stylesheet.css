@@ -4,9 +4,46 @@
     margin: 0;
 }
 
+h1 , h2 , p , a {
+    letter-spacing: 3px;
+    padding: 5px;
+    font-weight: normal;
+}
+
 a {
     text-decoration: none;
+    transition: all  0.3s ease;
 }
+
+a:hover {
+    color: #DEDEDE;
+}
+
+
+a.btn-border {
+    display: inline-block;
+    border-radius: 100vh;
+    background: #88C8BC;
+    width: 200px;
+    padding: 15px 0px;
+    color: #fff;
+    margin: 15px 0px;
+    text-align: center;
+}
+  
+a.btn-border:hover {
+    color: #fff;
+    background: #e6dcd8;
+}
+
+
+.container {
+    padding: 50px 150px;
+}
+  
+
+
+/* ヘッダー */
 
 .header-top {
     padding-top: 30px;
@@ -26,11 +63,30 @@ a {
 
 .search {
     float: right;
+    border-radius: 100vh;
+    margin-right: 30px;
 }
 
 input[name="search"] {
-    margin-right: 30px;
+    width: 200px;
+
+    border-radius: 100vh;
+    border: 1px solid #7F8594;
+    padding: 12px;
+    outline: none
 }
+
+i {
+    font-size: 18px;
+    color: #fff;
+}
+
+.search a.btn-border {
+    display: inline-block;
+    border-radius: 50px;
+    text-align: center;
+}
+
 
 /* menu */
 
@@ -69,9 +125,33 @@ input[name="search"] {
 .main {
     height: 600px;
     overflow: hidden;
+    background-image: url(product-image/Soap.jpg);
+    background-position: center;
 }
 
-.main img {
-    width: 100%;
-    object-fit: contain;
+.product-introduction {
+    padding-top: 15%;
+}
+
+.main p , .main h2 {
+    text-shadow: #fff 0px 3px 8px;
+}
+
+
+/* product */
+
+.product img {
+    width: 300px;
+    padding: 10px 0px;
+}
+
+.product-list {
+    padding-top: 30px;
+    display: flex;
+}
+
+.product-ind {
+    display: block;
+    text-align: center;
+    width: 100vw;
 }
