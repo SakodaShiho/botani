@@ -4,13 +4,14 @@
     margin: 0;
 }
 
-h1 , h2 , p , a {
+h1 , h2 , h3 , p , a {
     letter-spacing: 3px;
     padding: 5px;
     font-weight: normal;
 }
 
 a {
+    color: #000;
     text-decoration: none;
     transition: all  0.3s ease;
 }
@@ -36,10 +37,13 @@ a.btn-border:hover {
     background: #e6dcd8;
 }
 
-
 .container {
-    padding: 50px 150px;
+    padding: 100px 150px;
 }
+
+.space {
+    height: 40px;
+  }
   
 
 
@@ -68,23 +72,34 @@ a.btn-border:hover {
 }
 
 input[name="search"] {
-    width: 200px;
-
+    position: absolute;
+    right: 2.5%;
+    height: 45px;
+    width: 220px;
     border-radius: 100vh;
-    border: 1px solid #7F8594;
-    padding: 12px;
+    border: 1px solid #DFDFDF;
+    padding-left: 12px;
     outline: none
 }
 
-i {
-    font-size: 18px;
+input::placeholder {
+    color: #DEDEDE;
+  }
+
+.search i {
+    font-size: 12px;
     color: #fff;
 }
 
 .search a.btn-border {
-    display: inline-block;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 0;
+    height: 20px;
     border-radius: 50px;
     text-align: center;
+    width: 50px;
 }
 
 
@@ -103,6 +118,12 @@ i {
 .menu li {
     font-size: 13px;
     padding-right: 40px;
+}
+
+.cart {
+    margin: 0 0 0 auto;
+    padding: 0px 50px 0px 0px;
+    font-size: 13px;
 }
 
 /* sale */
@@ -139,6 +160,10 @@ i {
 
 
 /* product */
+
+.product {
+    text-align: center;
+}
 
 .product img {
     width: 300px;
