@@ -126,6 +126,13 @@ input::placeholder {
     font-size: 13px;
 }
 
+.dropdwn_menu {
+    display: none;
+}
+
+
+
+
 /* sale */
 
 .sale {
@@ -179,4 +186,13 @@ input::placeholder {
     display: block;
     text-align: center;
     width: 100vw;
+}
+
+a .product-image {
+    transition: all 0.5s ease;
+}
+
+a:hover .product-image {
+    opacity: 0.5;
+    filter: alpha(opacity=70);
 }
