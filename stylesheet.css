@@ -2,6 +2,7 @@
     font-family: "Montserrat", Arial, sans-serif;
     letter-spacing: 1px;
     margin: 0;
+    max-width: 1500px;
 }
 
 h1 , h2 , h3 , p , a {
@@ -9,18 +10,14 @@ h1 , h2 , h3 , p , a {
     padding: 5px;
     font-weight: normal;
 }
-
 a {
     color: #000;
     text-decoration: none;
     transition: all  0.3s ease;
 }
-
 a:hover {
     color: #DEDEDE;
 }
-
-
 a.btn-border {
     display: inline-block;
     border-radius: 100vh;
@@ -36,11 +33,10 @@ a.btn-border:hover {
     color: #fff;
     background: #e6dcd8;
 }
-
 .container {
-    padding: 100px 150px;
+    width: 80%;
+    margin: 0 auto;
 }
-
 .space {
     height: 40px;
   }
@@ -50,15 +46,16 @@ a.btn-border:hover {
 /* ヘッダー */
 
 .header-top {
-    padding-top: 30px;
+    padding-top: 2rem;
 }
 
 /* logo */
 
 .logo {
-    padding-left: 50px;
+    display: flex;
+    padding: 0 3rem;
+    justify-content: space-between;
 }
-
 .logo img {
     width: 150px;
 }
@@ -66,33 +63,15 @@ a.btn-border:hover {
 /* search */
 
 .search {
-    float: right;
-    border-radius: 100vh;
-    margin-right: 30px;
+    position: relative;
+    margin-top: .5rem;
 }
-
-input[name="search"] {
-    position: absolute;
-    right: 2.5%;
-    height: 45px;
-    width: 220px;
-    border-radius: 100vh;
-    border: 1px solid #DFDFDF;
-    padding-left: 12px;
-    outline: none
-}
-
-input::placeholder {
-    color: #DEDEDE;
-  }
-
 .search i {
     font-size: 12px;
     color: #fff;
 }
-
 .search a.btn-border {
-    position: relative;
+    position: absolute;
     top: 0;
     right: 0;
     margin: 0;
@@ -101,12 +80,25 @@ input::placeholder {
     text-align: center;
     width: 50px;
 }
+input[name="search"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 45px;
+    width: 220px;
+    border-radius: 100px;
+    border: 1px solid #DFDFDF;
+    padding-left: 12px;
+}
+input::placeholder {
+    color: #DEDEDE;
+  }
 
 
 /* menu */
 
 .menu {
-    padding: 30px 0px 15px 53px;
+    padding: 3rem 3rem 1.5rem;
 }
 
 .menu ul {
@@ -119,19 +111,14 @@ input::placeholder {
     font-size: 13px;
     padding-right: 40px;
 }
-
-.cart {
-    margin: 0 0 0 auto;
-    padding: 0px 50px 0px 0px;
-    font-size: 13px;
+.menu li:last-child {
+    padding-right: 0;
+    margin-left: auto;
 }
 
 .dropdwn_menu {
     display: none;
 }
-
-
-
 
 /* sale */
 
@@ -140,13 +127,11 @@ input::placeholder {
     width: 100%;
     padding: 13px 0px;
 }
-
 .sale p {
     font-size: 13px;
     text-align: center;
     color: #fff;
 }
-
 
 /* main */
 
@@ -156,11 +141,9 @@ input::placeholder {
     background-image: url(product-image/Soap.jpg);
     background-position: center;
 }
-
 .product-introduction {
     padding: 15%;
 }
-
 .main p , .main h2 {
     text-shadow: #fff 0px 3px 8px;
 }
@@ -172,20 +155,20 @@ input::placeholder {
     text-align: center;
 }
 
+.product-ind {
+    display: block;
+    text-align: center;
+    margin: 0 0.5rem;
+}
+
 .product img {
-    width: 300px;
+    width: 100%;
     padding: 10px 0px;
 }
 
 .product-list {
     padding-top: 30px;
     display: flex;
-}
-
-.product-ind {
-    display: block;
-    text-align: center;
-    width: 100vw;
 }
 
 a .product-image {
