@@ -36,6 +36,7 @@ a.btn-border:hover {
 .container {
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 5rem;
 }
 .space {
     height: 40px;
@@ -90,6 +91,9 @@ input[name="search"] {
     border: 1px solid #DFDFDF;
     padding-left: 12px;
 }
+input[name="search"]:focus {
+    outline: 0;
+  }
 input::placeholder {
     color: #DEDEDE;
   }
@@ -178,4 +182,34 @@ a .product-image {
 a:hover .product-image {
     opacity: 0.5;
     filter: alpha(opacity=70);
+}
+
+/* footer */
+
+footer {
+    background-color: #dedede;
+    padding: 3rem;
+}
+footer p {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5rem;
+}
+.logo_and_menu {
+    display: flex;
+    justify-content: space-between;
+}
+.logo_and_menu img {
+    width: 150px;
+}
+.logo_and_menu ul {
+    display: flex;
+    list-style: none;
+    font-size: 13px;
+}
+.logo_and_menu ul li {
+    margin-right: 1rem;
+}
+.logo_and_menu ul li:last-child {
+    margin-right: 0;
 }
